@@ -1,10 +1,8 @@
 From Coq Require Import ZArith String Program.Tactics.
 From stdpp Require Import base list tactics.
-From theories Require Import fold syntax domains react_notations.
+From theories Require Import fold syntax domains notations react_notations.
 From Hammer Require Import Hammer Tactics.
 Import ListNotations.
-
-Notation "'|' l '|'" := (length l) (at level 10).
 
 Record some_expr := {
   tag: hook_tag;
