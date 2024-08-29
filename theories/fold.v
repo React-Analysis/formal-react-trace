@@ -111,7 +111,7 @@ Proof.
 Qed.
 
 (* modus ponens *)
-Lemma mp: forall P Q: Type, P -> (P -> Q) -> Q.
+Lemma mp: ∀ P Q: Type, P -> (P -> Q) -> Q.
 Proof. intuition. Defined.
 
 Ltac hexploit x := eapply mp; [eapply x|].
